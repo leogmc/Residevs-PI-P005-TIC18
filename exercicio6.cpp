@@ -20,7 +20,7 @@ int main() {
 
     /*a. Leia a informação genética de uma planta na forma de um caractere sem sinal (unsigned char);*/
     cout<<"Digite a informação genética da planta (0 a 255): ";
-    cin>>geneDaPlanta;
+    scanf("%hhu", &value);
     int bitsPresente = 0;
     /*b. Utilizando os operadores bit a bit identifique quantos, dos genes estudados, estão presentes;*/
     string bitsStr = ucharToBinaryStr(geneDaPlanta, bitsPresente);
